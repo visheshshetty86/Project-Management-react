@@ -1,7 +1,13 @@
+import Navbar from "./shared/Navbar.jsx";
+
+ const dummyUser = {
+    name: "john doe",
+    email:"john.doe@example.com"
+  }
 export default function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Project Management Tool</h1>
-    </div>
+   <>
+   <Navbar User={dummyUser} />
+   </>
   );
 }
