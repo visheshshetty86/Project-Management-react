@@ -2,8 +2,19 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
 import Avatar from '@mui/material/Avatar';
 
+const dummyUser = {
+    name: "john doe",
+    email:"john.doe@example.com"
+  }
 
-export default function Navbar({User}) {
+export default function Navbar({user}) {
+  //  if (!user) {
+  //   return (
+  //     <nav className="w-full h-20 bg-white shadow-md">
+  //       <span className="ml-4 text-gray-400">Loading user…</span>
+  //     </nav>
+  //   );
+  //  }
  
   return (
     <nav className="w-full h-20 bg-white  shadow-md">
@@ -35,8 +46,8 @@ export default function Navbar({User}) {
         <div className="flex items-center gap-4">
            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
            <div className="flex flex-col">
-           <span>{User.name}</span>
-           <span>{User.email}</span>
+           <span>{dummyUser.name}</span>
+           <span>{dummyUser.email}</span>
            </div>
         </div>
 
