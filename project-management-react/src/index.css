@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 body {
   font-family: system-ui, Arial, sans-serif;
+}
+
+@theme {
+
+  --color-sidebar-bg: #0F090C;
+
+  --background-image-sidebar-radial:  radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 80%);
 }

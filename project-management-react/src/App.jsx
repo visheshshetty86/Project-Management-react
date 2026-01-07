@@ -1,13 +1,12 @@
 import Navbar from "./shared/Navbar.jsx";
+import Sidebar from "./shared/Sidebar.jsx";
 
- const dummyUser = {
-    name: "john doe",
-    email:"john.doe@example.com"
-  }
+ 
 export default function App() {
   return (
    <>
-   <Navbar User={dummyUser} />
+   <Navbar />
+   <Sidebar />
    </>
   );
 }
